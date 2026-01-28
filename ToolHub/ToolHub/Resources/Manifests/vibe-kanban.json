@@ -1,0 +1,65 @@
+{
+  "id": "vibe-kanban",
+  "name": "Vibe Kanban",
+  "version": "0.8.5",
+  "description": "AI Coding Agent Orchestrator with Kanban board",
+  "icon": "rectangle.grid.2x2",
+  "install": {
+    "command": "npm install -g vibe-kanban",
+    "check": "which vibe-kanban"
+  },
+  "start": {
+    "command": "vibe-kanban",
+    "port_range": {
+      "min": 3000,
+      "max": 3100
+    },
+    "health_check": "http://localhost:{port}/health",
+    "environment": {}
+  },
+  "ui": {
+    "url": "http://localhost:{port}",
+    "toolbar": [
+      {
+        "type": "button",
+        "label": "New Board",
+        "icon": "plus.square",
+        "action": "newBoard"
+      },
+      {
+        "type": "dropdown",
+        "label": "View",
+        "action": "changeView",
+        "options": ["Board", "List", "Calendar"]
+      },
+      {
+        "type": "search",
+        "label": "Search",
+        "action": "searchTasks",
+        "shortcut": "cmd+f"
+      }
+    ],
+    "widgets": [
+      {
+        "type": "counter",
+        "title": "Active Tasks",
+        "source": "tasks.active"
+      },
+      {
+        "type": "chart",
+        "title": "Task Progress",
+        "source": "tasks.progress"
+      },
+      {
+        "type": "counter",
+        "title": "Active Agents",
+        "source": "agents.active"
+      }
+    ]
+  },
+  "a2a": {
+    "supported": true,
+    "capabilities": ["task-management", "agent-orchestration"],
+    "endpoint": "http://localhost:{port}/a2a"
+  }
+}

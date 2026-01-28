@@ -1,0 +1,60 @@
+{
+  "id": "moltbot",
+  "name": "Moltbot",
+  "version": "1.0.0",
+  "description": "Personal AI Assistant with WebChat interface",
+  "icon": "bubble.left.fill",
+  "install": {
+    "command": "npm install -g moltbot",
+    "check": "which moltbot"
+  },
+  "start": {
+    "command": "moltbot gateway",
+    "port": 18789,
+    "health_check": "http://localhost:18789/health",
+    "environment": {
+      "MOLTBOT_PORT": "18789"
+    }
+  },
+  "ui": {
+    "url": "http://localhost:18789",
+    "toolbar": [
+      {
+        "type": "button",
+        "label": "New Chat",
+        "icon": "plus",
+        "action": "newChat",
+        "shortcut": "cmd+n"
+      },
+      {
+        "type": "dropdown",
+        "label": "Model",
+        "action": "selectModel",
+        "options": ["claude-opus", "claude-sonnet", "claude-haiku", "gpt-4", "gpt-4-turbo"]
+      },
+      {
+        "type": "search",
+        "label": "Search",
+        "action": "searchHistory",
+        "shortcut": "cmd+f"
+      }
+    ],
+    "widgets": [
+      {
+        "type": "status",
+        "title": "Gateway Status",
+        "source": "gateway.status"
+      },
+      {
+        "type": "counter",
+        "title": "Active Chats",
+        "source": "chats.active"
+      }
+    ]
+  },
+  "a2a": {
+    "supported": true,
+    "capabilities": ["chat", "task-creation", "code-generation"],
+    "endpoint": "http://localhost:18789/a2a"
+  }
+}

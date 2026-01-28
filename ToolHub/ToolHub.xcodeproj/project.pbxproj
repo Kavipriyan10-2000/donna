@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		TOOLHUB001 /* ToolHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB002 /* ToolHubApp.swift */; };
+		TOOLHUB003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB004 /* ContentView.swift */; };
+		TOOLHUB005 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB006 /* SidebarView.swift */; };
+		TOOLHUB007 /* ToolWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB008 /* ToolWebView.swift */; };
+		TOOLHUB009 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB010 /* Tool.swift */; };
+		TOOLHUB011 /* ToolRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB012 /* ToolRegistry.swift */; };
+		TOOLHUB013 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB014 /* UserPreferences.swift */; };
+		TOOLHUB015 /* ToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB016 /* ToolManager.swift */; };
+		TOOLHUB017 /* ProcessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB018 /* ProcessManager.swift */; };
+		TOOLHUB019 /* PortFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB020 /* PortFinder.swift */; };
+		TOOLHUB021 /* HealthChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = TOOLHUB022 /* HealthChecker.swift */; };
+		TOOLHUB023 /* moltbot.json in Resources */ = {isa = PBXBuildFile; fileRef = TOOLHUB024 /* moltbot.json */; };
+		TOOLHUB025 /* vibe-kanban.json in Resources */ = {isa = PBXBuildFile; fileRef = TOOLHUB026 /* vibe-kanban.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		TOOLHUB002 /* ToolHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolHubApp.swift; sourceTree = "<group>"; };
+		TOOLHUB004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		TOOLHUB006 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		TOOLHUB008 /* ToolWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolWebView.swift; sourceTree = "<group>"; };
+		TOOLHUB010 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		TOOLHUB012 /* ToolRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolRegistry.swift; sourceTree = "<group>"; };
+		TOOLHUB014 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		TOOLHUB016 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
+		TOOLHUB018 /* ProcessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessManager.swift; sourceTree = "<group>"; };
+		TOOLHUB020 /* PortFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortFinder.swift; sourceTree = "<group>"; };
+		TOOLHUB022 /* HealthChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthChecker.swift; sourceTree = "<group>"; };
+		TOOLHUB024 /* moltbot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moltbot.json; sourceTree = "<group>"; };
+		TOOLHUB026 /* vibe-kanban.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "vibe-kanban.json"; sourceTree = "<group>"; };
+		TOOLHUB100 /* ToolHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		TOOLHUB200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		TOOLHUB300 = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB301 /* ToolHub */,
+				TOOLHUB101 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		TOOLHUB101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB100 /* ToolHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		TOOLHUB301 /* ToolHub */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB002 /* ToolHubApp.swift */,
+				TOOLHUB302 /* Views */,
+				TOOLHUB303 /* ViewModels */,
+				TOOLHUB304 /* Services */,
+				TOOLHUB305 /* Models */,
+				TOOLHUB306 /* Utils */,
+				TOOLHUB307 /* Resources */,
+			);
+			path = ToolHub;
+			sourceTree = "<group>";
+		};
+		TOOLHUB302 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB004 /* ContentView.swift */,
+				TOOLHUB006 /* SidebarView.swift */,
+				TOOLHUB008 /* ToolWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		TOOLHUB303 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB016 /* ToolManager.swift */,
+				TOOLHUB018 /* ProcessManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		TOOLHUB304 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB012 /* ToolRegistry.swift */,
+				TOOLHUB014 /* UserPreferences.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		TOOLHUB305 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB010 /* Tool.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		TOOLHUB306 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB020 /* PortFinder.swift */,
+				TOOLHUB022 /* HealthChecker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		TOOLHUB307 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB308 /* Manifests */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		TOOLHUB308 /* Manifests */ = {
+			isa = PBXGroup;
+			children = (
+				TOOLHUB024 /* moltbot.json */,
+				TOOLHUB026 /* vibe-kanban.json */,
+			);
+			path = Manifests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TOOLHUB400 /* ToolHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = TOOLHUB401 /* Build configuration list for PBXNativeTarget "ToolHub" */;
+			buildPhases = (
+				TOOLHUB500 /* Sources */,
+				TOOLHUB200 /* Frameworks */,
+				TOOLHUB501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToolHub;
+			productName = ToolHub;
+			productReference = TOOLHUB100 /* ToolHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		TOOLHUB600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TOOLHUB400 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = TOOLHUB601 /* Build configuration list for PBXProject "ToolHub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = TOOLHUB300;
+			productRefGroup = TOOLHUB101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TOOLHUB400 /* ToolHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		TOOLHUB501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				TOOLHUB023 /* moltbot.json in Resources */,
+				TOOLHUB025 /* vibe-kanban.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		TOOLHUB500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				TOOLHUB001 /* ToolHubApp.swift in Sources */,
+				TOOLHUB003 /* ContentView.swift in Sources */,
+				TOOLHUB005 /* SidebarView.swift in Sources */,
+				TOOLHUB007 /* ToolWebView.swift in Sources */,
+				TOOLHUB009 /* Tool.swift in Sources */,
+				TOOLHUB011 /* ToolRegistry.swift in Sources */,
+				TOOLHUB013 /* UserPreferences.swift in Sources */,
+				TOOLHUB015 /* ToolManager.swift in Sources */,
+				TOOLHUB017 /* ProcessManager.swift in Sources */,
+				TOOLHUB019 /* PortFinder.swift in Sources */,
+				TOOLHUB021 /* HealthChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		TOOLHUB700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		TOOLHUB701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		TOOLHUB702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToolHub/ToolHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toolhub.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		TOOLHUB703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToolHub/ToolHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toolhub.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		TOOLHUB401 /* Build configuration list for PBXNativeTarget "ToolHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				TOOLHUB702 /* Debug */,
+				TOOLHUB703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		TOOLHUB601 /* Build configuration list for PBXProject "ToolHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				TOOLHUB700 /* Debug */,
+				TOOLHUB701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = TOOLHUB600 /* Project object */;
+}
